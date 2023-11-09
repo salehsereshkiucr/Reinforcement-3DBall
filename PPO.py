@@ -130,7 +130,7 @@ def main():
     lr = 0.0003                 # parameters for Adam optimizer
     betas = (0.9, 0.999)
     # creating environment
-    env_directory = '/Users/salehsereshki/Desktop/Data/UCRStudent/RL/Project/environments/3Dball_single_no_learn_colored.app'
+    env_directory = 'path-to-the-env/3Dball_single_no_learn_colored.app'
     unity_env = UnityEnvironment(env_directory)
     env = UnityToGymWrapper(unity_env, 0, allow_multiple_obs=True)
     memory = ReplayBuffer()
