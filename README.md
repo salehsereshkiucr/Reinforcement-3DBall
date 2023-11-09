@@ -6,7 +6,6 @@ This project aims to explore and evaluate the efficiency and effectiveness of tw
 
 ## The Unity 3DBall Balancing Challenge
 
-![Unity 3DBall Balancing](path/to/unity_3dball_image.png)
 *The 3DBall Balancing Environment - a test of an agent's ability to balance a ball on a platform.*
 
 The 3DBall Balancing game is a Unity environment where the goal is to balance a ball on a platform that an agent can tilt along two axes. It serves as an excellent benchmark for evaluating the adaptability and precision of RL algorithms in maintaining balance while responding to the continuous, unpredictable movement of the ball.
@@ -17,9 +16,13 @@ The 3DBall Balancing game is a Unity environment where the goal is to balance a 
 
 SAC is a state-of-the-art algorithm for deep reinforcement learning that employs a stochastic policy for efficient exploration of the action space. It is particularly noted for its stability and robustness, making it a prime candidate for environments with complex, high-dimensional spaces.
 
+![Unity 3DBall Balancing](files/sac_final.png)
+
 ### Proximal Policy Optimization (PPO)
 
 PPO has gained popularity due to its simplicity and effectiveness, especially in terms of sample efficiency and ease of tuning. It implements a trust region in policy optimization to prevent disruptive updates, ensuring smooth learning curves and consistent performance.
+
+![Unity 3DBall Balancing](files/ppo_final.png)
 
 ## Getting Started
 
@@ -35,18 +38,3 @@ Here's an overview of the process we followed:
 
 3. **Simulation and Interaction:** With the environment and gym wrapper in place, we can run simulations and interact with the environment using Python. This means we can implement, train, and evaluate RL algorithms like SAC and PPO in a Python script, directly influencing the Unity environment.
 
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-- Python 3.6 or higher
-- Unity ML-Agents
-- Relevant Python libraries as specified in `requirements.txt`
-
-### Installation
-
-Clone the repository and install the dependencies:
-
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-pip install -r requirements.txt
