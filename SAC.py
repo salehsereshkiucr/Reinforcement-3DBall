@@ -233,7 +233,7 @@ class QCriticNet(nn.Module):
         return self.output(x)
 
 
-env_directory = '/Users/salehsereshki/Desktop/Data/UCRStudent/RL/Project/environments/3Dball_single_no_learn_colored.app'
+env_directory = 'path-to-the-env/3Dball_single_no_learn_colored.app'
 unity_env = UnityEnvironment(env_directory, no_graphics=True)
 env = UnityToGymWrapper(unity_env, 0, allow_multiple_obs=True)
 
